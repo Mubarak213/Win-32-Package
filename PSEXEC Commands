@@ -1,0 +1,3 @@
+PSEXEC COMMANDS:
+
+"Path of the Psexec.exe" -s -i cmd.exe
