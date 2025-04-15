@@ -1,0 +1,19 @@
+//Reinstall property:
+//Within Msi -->         REINSTALLMODE = omus
+//Command prompt -->      REINSTALLMODE = vomus
+REINSTALL = ALL
+
+//Driver path:
+C:\Windows\System32\Driverstore\FileRepository
+//Msi commands to install the patch:
+Msiexec <Msi path> TRANSFORMS= <MST path> / <Patch file path.msp> REINSTALLMODE = omus REINSTALL = ALL
+
+//Response file command:
+Setup.exe -r -f1<Path of the iss file> 
+//To install with response file:
+Setup.exe or -f1<Path of the iss file> -f2<Path of the log file>
+
+Remove if Present (APPURLUPDATEINFO = 0) 
+ISCHECKFORUPDATES = 0
+REBOOT = ReallySuppress
+RebootYesNo = No
