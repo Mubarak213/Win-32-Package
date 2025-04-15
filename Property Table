@@ -17,3 +17,9 @@ Remove if Present (APPURLUPDATEINFO = 0)
 ISCHECKFORUPDATES = 0
 REBOOT = ReallySuppress
 RebootYesNo = No
+--------------
+//VBScript commands:
+ainstall = "{Product code}|" & PACKAGENAME1 & "|" & PACKAGENAME2
+
+SETUP.exe & /adminfile "&char(34)& sCurrentDir & "updates\microsoftsharepaoint.msp" & char(34)
+
