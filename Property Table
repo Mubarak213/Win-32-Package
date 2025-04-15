@@ -23,3 +23,27 @@ ainstall = "{Product code}|" & PACKAGENAME1 & "|" & PACKAGENAME2
 
 SETUP.exe & /adminfile "&char(34)& sCurrentDir & "updates\microsoftsharepaoint.msp" & char(34)
 
+sCmd = CHR(34) & sCurrentDir & "path of the setup.exe"
+
+-------------
+Batch Script Commands:
+
+taskkill /im notepad.exe /f
+
+Batch script task kill function:
+-------
+tasklist /fi "notepad.exe" > null
+ if "errorlevel 1"
+  taskkill /f /im "notepad.exe"
+--------
+
+Regisry AppPath:
+HKLM\Software\Microsoft\Windows\CurentVersion\AppPaths\Example.exe
+//Name=Default, Datatype = Rez_SZ, Data Value = notepad.exe
+
+Msi commands:
+/norestart -> It wont restart after installatiom
+/promptrestart --> Prompt the user for restart if neccessory
+
+
+
