@@ -1,0 +1,6 @@
+//Activesetup Path:
+HKLM\Software\Microsft\ActiveSetup\InstalledComponent\{Product Code}
+//Activesetup key in registry:
+StubPath = Msiexec /fpu "Product Code" /qn
+
+
