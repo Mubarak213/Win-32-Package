@@ -1,0 +1,46 @@
+enable-appv
+add-appvclientpackage -path <Copp as path>
+
+publish-appvclientpackage -name <appv package name>
+
+check whether application is installed or not
+
+1.windows search 
+
+2.c:\Programdata\Appv\<Package id>\
+
+For unpublish
+
+unpublish-appvclientpackage 
+
+Remove-appvclientpackage -Name <Package name>
+
+regedit:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
